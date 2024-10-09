@@ -1,0 +1,206 @@
+import { createSlice } from "@reduxjs/toolkit";
+
+const propertiesSlice = createSlice({
+    name: "properties",
+    initialState: {
+        properties: [
+            {
+                id: 1,
+                name: 'Luxury Villa in Beverly Hills',
+                description: 'A stunning villa located in the heart of Beverly Hills with breathtaking views and modern amenities.',
+                location: 'Beverly Hills, California, USA',
+                price: 4500000,
+                bedroomsCount: 5,
+                bathroomsCount: 4,
+                areaSize: '3,500 Square Feet',
+                features: ['Swimming Pool', 'Garage', 'Garden', 'Home Theater'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 2,
+                name: 'Modern Apartment in New York',
+                description: 'A spacious apartment in the bustling city center, offering luxurious living spaces and high-end finishes.',
+                location: 'Manhattan, New York, USA',
+                price: 3000000,
+                bedroomsCount: 3,
+                bathroomsCount: 2,
+                areaSize: '2,200 Square Feet',
+                features: ['Gym', 'Rooftop Access', 'Concierge Service'],
+                images: [],
+                image: '/assets/properties/2.jpg'
+            },
+            {
+                id: 3,
+                name: 'Beach House in Miami',
+                description: 'A beautiful beach house with direct ocean access and stunning views of the sunset.',
+                location: 'Miami, Florida, USA',
+                price: 2500000,
+                bedroomsCount: 4,
+                bathroomsCount: 3,
+                areaSize: '3,000 Square Feet',
+                features: ['Private Beach', 'Boat Dock', 'Outdoor Kitchen'],
+                images: [],
+                image: '/assets/properties/3.jpg'
+            },
+            {
+                id: 4,
+                name: 'Penthouse in London',
+                description: 'An exclusive penthouse in the heart of London with panoramic city views and high-end interiors.',
+                location: 'Chelsea, London, UK',
+                price: 5000000,
+                bedroomsCount: 3,
+                bathroomsCount: 3,
+                areaSize: '2,800 Square Feet',
+                features: ['Private Elevator', 'Roof Terrace', 'Smart Home System'],
+                images: [],
+                image: '/assets/properties/4.jpg'
+            },
+            {
+                id: 5,
+                name: 'Countryside Cottage',
+                description: 'A charming cottage located in the peaceful countryside, perfect for a weekend retreat.',
+                location: 'Cotswolds, England, UK',
+                price: 750000,
+                bedroomsCount: 2,
+                bathroomsCount: 2,
+                areaSize: '1,500 Square Feet',
+                features: ['Fireplace', 'Garden', 'Wooden Flooring'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 6,
+                name: 'Mountain Cabin',
+                description: 'A cozy cabin surrounded by nature, ideal for those who love mountain views and hiking.',
+                location: 'Aspen, Colorado, USA',
+                price: 1200000,
+                bedroomsCount: 3,
+                bathroomsCount: 2,
+                areaSize: '2,000 Square Feet',
+                features: ['Hot Tub', 'Fireplace', 'Large Deck'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 7,
+                name: 'Modern House with Pool',
+                description: 'A sleek and modern house featuring an infinity pool and open-plan living spaces.',
+                location: 'Los Angeles, California, USA',
+                price: 3500000,
+                bedroomsCount: 4,
+                bathroomsCount: 4,
+                areaSize: '3,800 Square Feet',
+                features: ['Infinity Pool', 'Home Gym', 'Wine Cellar'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 8,
+                name: 'Rustic Farmhouse',
+                description: 'A traditional farmhouse with rustic charm, situated on a large plot of land.',
+                location: 'Tuscany, Italy',
+                price: 2000000,
+                bedroomsCount: 4,
+                bathroomsCount: 3,
+                areaSize: '4,000 Square Feet',
+                features: ['Barn', 'Orchard', 'Stone Fireplace'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 9,
+                name: 'City Loft',
+                description: 'A stylish loft in a converted warehouse, featuring exposed brick and high ceilings.',
+                location: 'SoHo, New York, USA',
+                price: 1500000,
+                bedroomsCount: 2,
+                bathroomsCount: 2,
+                areaSize: '1,800 Square Feet',
+                features: ['Open Floor Plan', 'Exposed Brick', 'Industrial Design'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 10,
+                name: 'Family Home in Suburbs',
+                description: 'A spacious family home with a large backyard, perfect for family gatherings.',
+                location: 'Palo Alto, California, USA',
+                price: 1800000,
+                bedroomsCount: 5,
+                bathroomsCount: 3,
+                areaSize: '2,700 Square Feet',
+                features: ['Large Backyard', 'Home Office', 'Play Area'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 11,
+                name: 'Charming Bungalow',
+                description: 'A quaint bungalow with a beautiful garden, ideal for a small family or a couple.',
+                location: 'Austin, Texas, USA',
+                price: 900000,
+                bedroomsCount: 3,
+                bathroomsCount: 2,
+                areaSize: '1,600 Square Feet',
+                features: ['Garden', 'Front Porch', 'Wooden Floors'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 12,
+                name: 'Luxury Condo',
+                description: 'A modern condo with state-of-the-art amenities, located in a prime downtown area.',
+                location: 'Toronto, Canada',
+                price: 1100000,
+                bedroomsCount: 2,
+                bathroomsCount: 2,
+                areaSize: '1,900 Square Feet',
+                features: ['Gym', '24/7 Security', 'Balcony'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 13,
+                name: 'Eco-Friendly Home',
+                description: 'A sustainable, eco-friendly home with solar panels and a green roof.',
+                location: 'Portland, Oregon, USA',
+                price: 1300000,
+                bedroomsCount: 3,
+                bathroomsCount: 3,
+                areaSize: '2,500 Square Feet',
+                features: ['Solar Panels', 'Rainwater Harvesting', 'Green Roof'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 14,
+                name: 'Designer Studio',
+                description: 'A chic studio apartment with custom-designed interiors and top-notch amenities.',
+                location: 'Paris, France',
+                price: 800000,
+                bedroomsCount: 1,
+                bathroomsCount: 1,
+                areaSize: '1,100 Square Feet',
+                features: ['High Ceilings', 'Designer Kitchen', 'Walk-in Closet'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            },
+            {
+                id: 15,
+                name: 'Luxury Chalet',
+                description: 'A beautiful chalet located in the Alps, perfect for a winter getaway.',
+                location: 'Chamonix, France',
+                price: 3000000,
+                bedroomsCount: 5,
+                bathroomsCount: 5,
+                areaSize: '4,500 Square Feet',
+                features: ['Ski-In/Ski-Out Access', 'Sauna', 'Outdoor Hot Tub'],
+                images: [],
+                image: '/assets/properties/1.jpg'
+            }
+        ],
+    }
+});
+
+export default propertiesSlice.reducer;
